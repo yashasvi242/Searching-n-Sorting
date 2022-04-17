@@ -9,10 +9,11 @@ void swap(int *num1,int *num2){
 
 
 void printArray(int arr[],int arraySize){
-
+    cout<<"{ ";
     for(int k =0;k<arraySize;k++){
         cout<<arr[k]<<" ";
     }
+    cout<<"}";
     cout<<endl;
 
 }
@@ -37,3 +38,6 @@ int main(){
     printArray(arr,arraySize);
     return 0;
 }
+
+//input = {11,2,-3,10,-2}
+//output = { -3 -2 2 10 11 }
